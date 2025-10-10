@@ -9,6 +9,7 @@ if(! test -d /dist/9front/.git) {
 		echo 'in order to update, run the following commands:'
 		echo '	mkdir /dist/9front && cd /dist/9front && \'
 		echo '	hget https://git.9front.org/static/9front-scrubbed.tar.gz | tar xz'
+		echo '	chmod g+w `{walk /dist/9front}'
 		echo 'once that has been done, you may delete /dist/plan9front.'
 		exit upgrade
 	}
